@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="background-animation"></div>
+    <button class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Currency Converter</h1>
+            <p>Get real-time exchange rates</p>
+        </div>
+
+        <form class="converter-form">
+            <div class="input-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" min="0" step="0.01" required placeholder="Enter amount">
+            </div>
+
+            <div class="currency-row">
+                <div class="input-group">
+                    <label for="from">From</label>
+                    <select id="from" required></select>
+                </div>
+
+                <button type="button" class="swap-btn">
+                    <i class="fas fa-exchange-alt"></i>
+                </button>
+
+                <div class="input-group">
+                    <label for="to">To</label>
+                    <select id="to" required></select>
+                </div>
+            </div>
+
+            <button type="submit" class="convert-btn">
+                Convert
+                <div class="loader"></div>
+            </button>
+        </form>
+
+        <div class="result">
+            <h2>Result</h2>
+            <p id="result-text">Enter an amount to convert</p>
+        </div>
+
+        <div class="history">
+            <h3>Recent Conversions</h3>
+            <div class="history-list" id="history-list"></div>
+        </div>
+        <div class="footer">
+            <p>© 2024 Khamko. All rights reserved</p>
+            <div class="social-media"></div>
+            <a href="https://www.facebook.com/khamkoxys" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/khamko177/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
