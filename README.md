@@ -37,6 +37,9 @@ A sleek and responsive currency converter web application with real-time exchang
 5. Use the swap button to quickly switch between currencies
 6. Toggle dark/light mode using the theme button
 
+## Live Demo
+Link: https://khamko07.github.io/CurrencyConverter-/
+
 ## API Reference
 
 This project uses the [ExchangeRate-API v6](https://v6.exchangerate-api.com/) for currency conversion rates.
